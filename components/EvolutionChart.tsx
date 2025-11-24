@@ -54,7 +54,7 @@ const BaseChart = ({ data }: { data: any[] }) => {
                     />
                     <Legend wrapperStyle={{ display: 'none' }}/>
                     <Line type="monotone" dataKey="Valor Investido" stroke="#1e293b" strokeWidth={2} dot={{ r: 4, fill: '#1e293b', stroke: 'white', strokeWidth: 2 }} activeDot={{ r: 6 }} />
-                    <Line type="monotone" dataKey="Total Acumulado" stroke="#2C3FA5" strokeWidth={2} dot={{ r: 4, fill: '#2C3FA5', stroke: 'white', strokeWidth: 2 }} activeDot={{ r: 6 }} />
+                    <Line type="monotone" dataKey="Total Acumulado" stroke="#4F772D" strokeWidth={2} dot={{ r: 4, fill: '#4F772D', stroke: 'white', strokeWidth: 2 }} activeDot={{ r: 6 }} />
                 </LineChart>
             </ResponsiveContainer>
         </div>

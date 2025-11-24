@@ -10,7 +10,7 @@ const CurrencyInput = ({ value, onChange, id, label }: { value: string, onChange
     return (
         <div>
             <label htmlFor={id} className="block text-sm font-medium text-slate-700 mb-1">{label}</label>
-            <div className="flex items-center rounded-md border border-slate-300 bg-white shadow-sm focus-within:border-[#2C3FA5] focus-within:ring-1 focus-within:ring-[#2C3FA5]">
+            <div className="flex items-center rounded-md border border-slate-300 bg-white shadow-sm focus-within:border-[#4F772D] focus-within:ring-1 focus-within:ring-[#4F772D]">
                 <span className="pl-3 pr-2 text-slate-500">R$</span>
                 <input
                     type="text"
@@ -73,7 +73,7 @@ export const CalculatorForm: React.FC<CalculatorFormProps> = ({ onCalculate, onC
 
   return (
     <div className="bg-white p-6 md:p-8 rounded-lg shadow-md mb-10">
-      <h2 className="text-2xl font-bold text-[#2C3FA5] mb-6">Simulador de Juros Compostos</h2>
+      <h2 className="text-2xl font-bold text-[#4F772D] mb-6">Simulador de Juros Compostos</h2>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <CurrencyInput 
@@ -99,13 +99,13 @@ export const CalculatorForm: React.FC<CalculatorFormProps> = ({ onCalculate, onC
                 id="interestRate"
                 value={interestRate}
                 onChange={(e) => setInterestRate(e.target.value)}
-                className="flex-1 min-w-0 block w-full px-3 py-2 border-t border-b border-slate-300 bg-white focus:outline-none focus:ring-[#2C3FA5] focus:border-[#2C3FA5] sm:text-sm"
+                className="flex-1 min-w-0 block w-full px-3 py-2 border-t border-b border-slate-300 bg-white focus:outline-none focus:ring-[#4F772D] focus:border-[#4F772D] sm:text-sm"
                 placeholder="8"
               />
               <select
                 value={rateType}
                 onChange={(e) => setRateType(e.target.value as 'monthly' | 'yearly')}
-                className="rounded-r-md border border-l-0 border-slate-300 bg-slate-50 text-slate-700 focus:ring-[#2C3FA5] focus:border-[#2C3FA5]"
+                className="rounded-r-md border border-l-0 border-slate-300 bg-slate-50 text-slate-700 focus:ring-[#4F772D] focus:border-[#4F772D]"
               >
                 <option value="yearly">anual</option>
                 <option value="monthly">mensal</option>
@@ -120,13 +120,13 @@ export const CalculatorForm: React.FC<CalculatorFormProps> = ({ onCalculate, onC
                 id="period"
                 value={period}
                 onChange={(e) => setPeriod(e.target.value)}
-                className="flex-1 min-w-0 block w-full px-3 py-2 rounded-l-md border border-slate-300 bg-white focus:outline-none focus:ring-[#2C3FA5] focus:border-[#2C3FA5] sm:text-sm"
+                className="flex-1 min-w-0 block w-full px-3 py-2 rounded-l-md border border-slate-300 bg-white focus:outline-none focus:ring-[#4F772D] focus:border-[#4F772D] sm:text-sm"
                 placeholder="10"
               />
               <select
                 value={periodType}
                 onChange={(e) => setPeriodType(e.target.value as 'months' | 'years')}
-                className="rounded-r-md border border-l-0 border-slate-300 bg-slate-50 text-slate-700 focus:ring-[#2C3FA5] focus:border-[#2C3FA5]"
+                className="rounded-r-md border border-l-0 border-slate-300 bg-slate-50 text-slate-700 focus:ring-[#4F772D] focus:border-[#4F772D]"
               >
                 <option value="years">ano(s)</option>
                 <option value="months">mes(es)</option>
@@ -137,11 +137,11 @@ export const CalculatorForm: React.FC<CalculatorFormProps> = ({ onCalculate, onC
         <div className="flex flex-col sm:flex-row items-center justify-between pt-4 gap-4">
             <button
               type="submit"
-              className="w-full sm:w-auto bg-[#2C3FA5] text-white font-bold py-2 px-8 rounded-md hover:bg-[#243387] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2C3FA5]"
+              className="w-full sm:w-auto bg-[#4F772D] text-white font-bold py-2 px-8 rounded-md hover:bg-[#36531F] transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#4F772D]"
             >
               Calcular
             </button>
-            <button type="button" onClick={handleClearClick} className="text-sm text-slate-600 hover:text-[#2C3FA5] transition-colors">Limpar</button>
+            <button type="button" onClick={handleClearClick} className="text-sm text-slate-600 hover:text-[#4F772D] transition-colors">Limpar</button>
         </div>
       </form>
     </div>

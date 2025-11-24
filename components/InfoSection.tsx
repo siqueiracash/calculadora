@@ -4,7 +4,7 @@ export const InfoSection: React.FC = () => {
     return (
         <div className="bg-white p-6 md:p-8 rounded-lg shadow-md mt-10 space-y-8 text-slate-700 leading-relaxed">
             <article className="space-y-4">
-                <h2 className="text-2xl font-bold text-[#2C3FA5] border-b-2 border-indigo-200 pb-2">Guia do Simulador de Juros Compostos</h2>
+                <h2 className="text-2xl font-bold text-[#4F772D] border-b-2 border-green-200 pb-2">Guia do Simulador de Juros Compostos</h2>
                 <p>Nossa ferramenta foi projetada para ser intuitiva e poderosa, permitindo que você visualize o potencial de crescimento dos seus investimentos de forma clara e objetiva. Siga os passos abaixo para começar:</p>
                 <ul className="list-decimal list-inside space-y-2 pl-4">
                     <li><strong>Valor Inicial:</strong> Insira o montante que você já possui para começar a investir. Se estiver começando do zero, pode deixar em branco ou inserir 0.</li>
@@ -16,7 +16,7 @@ export const InfoSection: React.FC = () => {
             </article>
 
             <article className="space-y-4">
-                <h2 className="text-2xl font-bold text-[#2C3FA5] border-b-2 border-indigo-200 pb-2">Qual é a fórmula e como se calculam os juros compostos?</h2>
+                <h2 className="text-2xl font-bold text-[#4F772D] border-b-2 border-green-200 pb-2">Qual é a fórmula e como se calculam os juros compostos?</h2>
                 <p>A fórmula base para os juros compostos é <code className="bg-slate-100 p-1 rounded">M = C * (1 + i)^t</code>, onde:</p>
                 <ul className="list-disc list-inside space-y-2 pl-4">
                     <li><strong>M:</strong> Montante final</li>
@@ -28,7 +28,7 @@ export const InfoSection: React.FC = () => {
             </article>
 
             <article className="space-y-4">
-                <h2 className="text-2xl font-bold text-[#2C3FA5] border-b-2 border-indigo-200 pb-2">Aplicações dos Juros Compostos</h2>
+                <h2 className="text-2xl font-bold text-[#4F772D] border-b-2 border-green-200 pb-2">Aplicações dos Juros Compostos</h2>
                 <p>Os "juros sobre juros" são um conceito fundamental nas finanças e estão presentes em diversas situações:</p>
                 <div className="grid md:grid-cols-2 gap-6 pt-2">
                     <div className="bg-slate-50 p-4 rounded-lg">
@@ -43,7 +43,7 @@ export const InfoSection: React.FC = () => {
             </article>
             
             <article className="space-y-4">
-                <h2 className="text-2xl font-bold text-[#2C3FA5] border-b-2 border-indigo-200 pb-2">Juros Simples vs. Juros Compostos</h2>
+                <h2 className="text-2xl font-bold text-[#4F772D] border-b-2 border-green-200 pb-2">Juros Simples vs. Juros Compostos</h2>
                 <p>A diferença crucial está na base de cálculo. <strong>Juros simples</strong> incidem sempre sobre o valor inicial. <strong>Juros compostos</strong> incidem sobre o valor inicial somado aos juros já acumulados.</p>
                 <p>Imagine um investimento de R$ 10.000 a 10% ao ano:</p>
                  <ul className="list-disc list-inside space-y-2 pl-4">
